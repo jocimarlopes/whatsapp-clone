@@ -25,7 +25,8 @@ module.exports = {
       tsx: 'never',
       js: 'never',
       jsx: 'never'
-    }]
+    }],
+    'arrow-parens': ['error', 'as-needed']
   },
   settings: {
     'import/parsers': {
