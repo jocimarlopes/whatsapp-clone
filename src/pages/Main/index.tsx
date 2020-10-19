@@ -1,7 +1,33 @@
 import React from 'react';
 
-import { Container } from './styles';
+import User from './User';
+import SearchBar from './SearchBar';
+import Contacts from './Contacts';
 
-const Main = () => <h1>Main</h1>;
+import ChatHeader from './ChatHeader';
+import Chat from './Chat';
+import ChatControls from './ChatControls';
+
+import { Container, LeftWrapper, RightWrapper } from './styles';
+
+const Main: React.FC = () => (
+  <Container>
+    <LeftWrapper>
+      <User />
+
+      <SearchBar />
+
+      <Contacts />
+    </LeftWrapper>
+
+    <RightWrapper>
+      <ChatHeader />
+
+      <Chat />
+
+      <ChatControls />
+    </RightWrapper>
+  </Container>
+);
 
 export default Main;
