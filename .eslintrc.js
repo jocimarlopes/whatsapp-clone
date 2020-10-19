@@ -14,6 +14,8 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
+    'implicit-arrow-linebreak': 'off',
+    'operator-linebreak': 'off',
     'prettier/prettier': 'error',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
@@ -26,7 +28,9 @@ module.exports = {
       js: 'never',
       jsx: 'never'
     }],
-    'arrow-parens': ['error', 'as-needed']
+    'arrow-parens': ['error', 'as-needed'],
+    'import/prefer-default-export': 'off',
+    'react/prop-types': 'off'
   },
   settings: {
     'import/parsers': {
