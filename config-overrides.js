@@ -10,8 +10,16 @@ module.exports = override(
           rootPathSuffix: './src',
         },
         {
+          rootPathPrefix: '@config/',
+          rootPathSuffix: './src/config',
+        },
+        {
           rootPathPrefix: '@components/',
           rootPathSuffix: './src/components',
+        },
+        {
+          rootPathPrefix: '@pages/',
+          rootPathSuffix: './src/pages',
         },
         {
           rootPathPrefix: '@store/',
@@ -28,6 +36,10 @@ module.exports = override(
         {
           rootPathPrefix: '@constants/',
           rootPathSuffix: './src/constants',
+        },
+        {
+          rootPathPrefix: '@services/',
+          rootPathSuffix: './src/services',
         },
       ],
     },

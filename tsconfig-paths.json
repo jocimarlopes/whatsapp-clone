@@ -8,6 +8,15 @@
       "@components/*": [
         "./components/*"
       ],
+      "@pages/*": [
+        "./pages/*"
+      ],
+      "@config/*": [
+        "./config/*"
+      ],
+      "@services/*": [
+        "./services/*"
+      ],
       "@store/*": [
         "./store/*"
       ],
