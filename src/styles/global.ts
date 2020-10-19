@@ -11,6 +11,8 @@ export default createGlobalStyle`
   body {
     background: ${props => props.theme.colors.background};
     transition: background 0.4s, color 0.4s;
+
+    overflow: hidden;
   }
 
   body::after {
