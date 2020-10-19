@@ -13,9 +13,24 @@ export default createGlobalStyle`
     transition: background 0.4s, color 0.4s;
   }
 
+  body::after {
+    content: '';
+    width: 100%;
+    height: 125px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+
+    background: ${props =>
+      props.theme.name === 'main' ? props.theme.colors.primary : 'transparent'};
+  }
+
   html, body, #root {
     height: 100%;
   }
+
 
   body, button, input {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

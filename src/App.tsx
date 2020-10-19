@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import HelloWorld from '@components/HelloWorld';
 import useThemeState from '@hooks/useThemeState';
 
 import GlobalStyles from './styles/global';
@@ -12,8 +11,6 @@ function App() {
 
   return (
     <ThemeProvider theme={themes[theme]}>
-      <HelloWorld />
-
       <button
         type="button"
         onClick={() => setTheme(theme === 'main' ? 'dark' : 'main')}
