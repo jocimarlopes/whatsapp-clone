@@ -1,10 +1,16 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { ReactComponent as MagnifierIcon } from '@src/assets/magnifier-icon.svg';
+
+import { Container, InputContainer } from './styles';
 
 const SearchBar: React.FC = () => (
   <Container>
-    <h1>search bar</h1>
+    <InputContainer>
+      <MagnifierIcon />
+
+      <input type="text" placeholder="Procurar ou começar uma nova conversa" />
+    </InputContainer>
   </Container>
 );
 
