@@ -9,7 +9,7 @@ const User: React.FC = () => (
   <Container>
     <LeftContainer>
       <img
-        src="https://avatars.dicebear.com/api/male/.svg"
+        src="https://picsum.photos/200/300"
         alt="user"
         className="user-image"
       />

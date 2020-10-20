@@ -31,6 +31,7 @@ export const LeftContainer = styled.div`
     width: 40px;
     height: 40px;
 
+    background-size: cover;
     border-radius: 20px;
     border: 1px solid ${props => props.theme.colors.lightGray};
   }
