@@ -1,10 +1,29 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { ReactComponent as ChatIcon } from '@src/assets/chat-icon.svg';
+import { ReactComponent as OptionsIcon } from '@src/assets/dots-vert-icon.svg';
+
+import { Container, LeftContainer, RightContainer } from './styles';
 
 const User: React.FC = () => (
   <Container>
-    <h1>user</h1>
+    <LeftContainer>
+      <img
+        src="https://avatars.dicebear.com/api/male/.svg"
+        alt="user"
+        className="user-image"
+      />
+    </LeftContainer>
+
+    <RightContainer>
+      <button>
+        <ChatIcon />
+      </button>
+
+      <button>
+        <OptionsIcon />
+      </button>
+    </RightContainer>
   </Container>
 );
 
