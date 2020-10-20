@@ -8,25 +8,27 @@ import ChatHeader from './ChatHeader';
 import Chat from './Chat';
 import ChatControls from './ChatControls';
 
-import { Container, LeftWrapper, RightWrapper } from './styles';
+import { Container, Box, LeftWrapper, RightWrapper } from './styles';
 
 const Main: React.FC = () => (
   <Container>
-    <LeftWrapper>
-      <User />
+    <Box>
+      <LeftWrapper>
+        <User />
 
-      <SearchBar />
+        <SearchBar />
 
-      <Contacts />
-    </LeftWrapper>
+        <Contacts />
+      </LeftWrapper>
 
-    <RightWrapper>
-      <ChatHeader />
+      <RightWrapper>
+        <ChatHeader />
 
-      <Chat />
+        <Chat />
 
-      <ChatControls />
-    </RightWrapper>
+        <ChatControls />
+      </RightWrapper>
+    </Box>
   </Container>
 );
 
