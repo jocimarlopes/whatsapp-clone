@@ -1,8 +1,6 @@
-import {
- useState, Dispatch, SetStateAction, useEffect
-} from 'react';
+import { useState, Dispatch, SetStateAction, useEffect } from 'react';
 
-type Themes = 'main' | 'dark';
+export type Themes = 'main' | 'dark';
 
 export default function useThemeState(
   initialState?: Themes,
