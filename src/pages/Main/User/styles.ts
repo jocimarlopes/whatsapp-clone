@@ -1,6 +1,11 @@
 import styled, { keyframes } from 'styled-components';
 import { parseToRgb } from 'polished';
-import themes from '@src/styles/themes';
+
+import { Themes } from '@hooks/useThemeState';
+
+interface RightContainerProps {
+  currentTheme: Themes;
+}
 
 const ripple = keyframes`
   from {
@@ -37,7 +42,7 @@ export const LeftContainer = styled.div`
   }
 `;
 
-export const RightContainer = styled.div`
+export const RightContainer = styled.div<RightContainerProps>`
   padding: 0 8px;
 
   flex: 1;
@@ -88,5 +93,12 @@ export const RightContainer = styled.div`
     height: 22px;
 
     fill: ${props => props.theme.colors.gray};
+  }
+
+  .toggle-theme-btn svg {
+    fill: ${props =>
+      props.currentTheme === 'main'
+        ? props.theme.colors.gray
+        : props.theme.colors.orange};
   }
 `;
